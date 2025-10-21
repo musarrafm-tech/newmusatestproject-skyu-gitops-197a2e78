@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: test
+  labels:
+    environmentId: env_030b3cbb-ae2d-4c9e-a8fc-df57562b06fb
+    projectId: project_e045038e-659d-446f-80a4-9ea25944f637
+    projectName: newmusatestproject
+    environmentName: prod
+    organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+    goldilocks.fairwinds.com/enabled: 'true'
