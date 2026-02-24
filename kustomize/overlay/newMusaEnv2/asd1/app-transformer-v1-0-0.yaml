@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: asd1-main
+      imagePullPolicy: Always
+      imageRegistry: asd/asd1
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_bea82312-be7e-4e26-ad10-ac1524e8862b
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: asd1
+    version: v1.0.0
+    applicationId: app_14a57454-064e-4c71-8bb5-197a72cd742d
+    projectId: project_e045038e-659d-446f-80a4-9ea25944f637
+    organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+    environmentId: env_d88ad156-851f-4e10-ad3a-88773996878f
+    environmentName: newmusaenv2
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: asd1
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: Musa

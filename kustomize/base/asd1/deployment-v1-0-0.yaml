@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asd1-v1-0-0
+  labels:
+    app: asd1-v1-0-0
+    applicationId: app_14a57454-064e-4c71-8bb5-197a72cd742d
+    version: v1.0.0
+    organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+    projectId: project_e045038e-659d-446f-80a4-9ea25944f637
+  annotations:
+    reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: asd1-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: asd1-v1-0-0
+        applicationId: app_14a57454-064e-4c71-8bb5-197a72cd742d
+        version: v1.0.0
+        organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+        projectId: project_e045038e-659d-446f-80a4-9ea25944f637
