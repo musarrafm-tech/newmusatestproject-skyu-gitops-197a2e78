@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: Musa
+  labels:
+    environmentId: env_3ef568fa-131d-4d7a-8207-8b8c97fe4ee4
+    projectId: project_e045038e-659d-446f-80a4-9ea25944f637
+    projectName: newmusatestproject
+    environmentName: newmusaenv23
+    organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+    goldilocks.fairwinds.com/enabled: 'true'
