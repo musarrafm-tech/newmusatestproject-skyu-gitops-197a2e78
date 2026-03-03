@@ -15,7 +15,7 @@ spec:
       memoryLimitMb: 450
       args: []
       command: []
-      configMounts: [Test Delete Later]
+      configMounts: []
       applicationPorts: []
       healthChecks: []
       name: asd1-main
