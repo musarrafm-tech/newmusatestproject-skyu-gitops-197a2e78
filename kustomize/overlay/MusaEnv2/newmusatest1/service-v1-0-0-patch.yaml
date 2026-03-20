@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: newmusatest1-v1-0-0
+    applicationId: app_ff1ab00e-7188-43d8-b791-6a07f44a206f
+    version: v1.0.0
+    organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+    projectId: project_e045038e-659d-446f-80a4-9ea25944f637
+    environmentId: env_c059217e-238e-4506-ac9b-9a298eb3b4d9
+  name: newmusatest1-v1-0-0
+spec:
+  selector:
+    app: newmusatest1-v1-0-0
