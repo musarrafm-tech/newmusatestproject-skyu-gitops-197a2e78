@@ -1,0 +1,17 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  annotations: {}
+  name: musatest2-v1-0-0
+  labels:
+    app: musatest2-v1-0-0
+    applicationId: app_6f16ee38-c727-4414-9a97-be095b2d05a0
+    version: v1.0.0
+    organizationId: org_214f8824-489e-4427-b043-83252b36ac2b
+    projectId: project_e045038e-659d-446f-80a4-9ea25944f637
+    environmentId: env_7bfc9712-de05-4e75-958f-1d30e258bc24
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: musatest2-v1-0-0
